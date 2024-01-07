@@ -37,6 +37,7 @@ export default function Home() {
           height={37}
           priority
         />
+        <p><a href="/about">About Us</a></p>
       </div>
 
       <div className={styles.grid}>
