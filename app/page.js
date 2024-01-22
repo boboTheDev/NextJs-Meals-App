@@ -1,24 +1,28 @@
 import Image from 'next/image'
-import styles from './page.css'
+import './page.css'
 import Link from 'next/link';
+
+import HeroSlideShow from '@/components/heroSlideShow/heroSlideShow';
 
 export default function Home() {
   return (
     <>
-      <header>
-        <div className='slideshow'></div>
-        <div>
-          <div className='slideshow-text'>
-            <h1>Love a meal? Share a meal.</h1>
-            <p>Taste & share meals from all over the world!</p>
+      <main>
+        <div className='slideshow-session'>
+          <div className='slideshow'>
+            <HeroSlideShow/>
           </div>
-          <div className='cta'>
-            <Link href="/community">Join Our Community</Link>
-            <Link href="/meals">Explore Meals</Link>
+          <div className='slideshow-cta'>
+            <div className='slideshow-text'>
+              <h1>Love a meal? Share a meal.</h1>
+              <p>Taste & share meals from all over the world!</p>
+            </div>
+            <div className='cta'>
+              <Link href="/community">Join Our Community</Link>
+              <Link href="/meals">Explore Meals</Link>
+            </div>
           </div>
         </div>
-      </header>
-      <main>
         <section>
           <h2>How it works</h2>
           <p>

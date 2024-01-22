@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
-export default function Meals(){ // name can be anything
+import './page.css';
+
+export default function MealsPage(){ 
     return (
         <main>
                 <h1>Meals Page.</h1>
